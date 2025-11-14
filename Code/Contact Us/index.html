@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ABVUS </title>
+    <link rel="icon" type="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="/FInal Logo.jpg" alt="आदिवासी एवं बैगा विकास उत्थान समिती लोगो" class="ngo-logo">
+            <h1 class="ngo-name">आदिवासी एवं बैगा विकास उत्थान समिती</h1>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/AboutUs/index.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#ourwork" class="nav-link">Our Work</a></li>
+                <li class="nav-item"><a href="#volunteer" class="nav-link"> Volunteers </a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Compaign</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                <li class="nav-item"><a href="#Join Us" class="nav-link join-button">Join Us </a></li>
+                <li class="nav-item"><a href="#donate" class="nav-link donate-button">Donate</a></li>
+            </ul>
+        </nav>
+
+        <div class="language-switcher">
+            <select id="language-select" onchange="setLanguage(this.value)">
+                <option value="en" selected>English</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+        </div>
+
+    </header>
+
+    <section id="contact-helpdesk" class="contact-helpdesk-section">
+        <div class="contact-container">
+            
+            <div class="contact-info">
+            <h2 class="section-title">CONTACT US</h2>
+
+            <div class="contact-category">
+                <h3>Address</h3>
+                <p class="detail-name"> <b>Head Quarter</b> </p>
+                <p class="detail-phone">Village Prempur, Post Khudiya, Block Samnapur, Distt Dindori 481778</p>
+            </div>
+
+            <div class="contact-category">        
+                <h4>Secretery </h4>
+                <p class="detail-name">Advocate Kehar Singh Verma</p>
+                <p class="detail-phone">+91 9425068290 </p>
+                <a href="mailto:abvusm01@gmail.com" class="detail-email">abvusm01@gmail.com </a>
+            </div>
+
+            <div class="social-media-links">
+                <h4 class="social-title">CONNECT WITH US</h4>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1K3SPEp37z/" target="_blank" class="social-icon facebook"> <i class="fab fa-whatsapp"></i></a>
+                    <a href="https://twitter.com/aebvus" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/abvus_org?igsh=MWcwdTdrYzdnbXNkMQ==" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/company/aebvus" target="_blank" class="social-icon linkedin"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@AbvusOrg" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+            <div class="helpdesk-form-container">
+                <h2 class="section-title">HELPDESK</h2>
+                <p class="form-description">For any grievance, suggestions and queries kindly write to us.</p>
+                
+                <form class="helpdesk-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+
+                    <!-- Phone and Email Group (Inline) -->
+                    <div class="form-group-inline">
+                        <div class="form-group phone-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group email-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

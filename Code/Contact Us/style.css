@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-header {
+    width: 100%;
+    height: 17%;
+    background-color: #65d4b194; 
+    color: #004d40; 
+    padding: 15px 5%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px 15px;
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+    
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 3px;
+}
+
+.ngo-logo {
+    height: 115px; 
+    width: auto;
+    margin: 5px;
+}
+
+
+.ngo-name {
+    font-size: 1.5em; 
+    font-weight: 700;
+    margin: 0;
+    color: #004d40;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 10px; 
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #100a0a; 
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: #ff6f00; 
+}
+
+.donate-button {
+    background-color: #ff6f00;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: 2px solid #ff6f00;
+    transition: all 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #e65100; 
+    border-color: #e65100;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.join-button {
+    background-color: #ff6f00;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: 2px solid #ff6f00;
+    transition: all 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #e65100; 
+    border-color: #e65100;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#language-select {
+    padding: 8px 15px;
+    font-size: 1.0em;
+    font-family: inherit; 
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#language-select:hover,
+#language-select:focus {
+    background-color: #fff;
+    border-color: #3cc6af; 
+    outline: none; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8; 
+}
+
+.contact-helpdesk-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); 
+    border-radius: 12px;
+    overflow: hidden; 
+}
+
+.contact-info {
+    flex: 1;
+    padding: 60px;
+    background-color: #fcfcfc; 
+    border-right: 1px solid #eee;
+}
+
+.contact-info .section-title {
+    font-size: 2em;
+    font-weight: 800;
+    color: #004d40; 
+    margin-bottom: 40px;
+}
+
+.contact-category {
+    margin-bottom: 40px;
+    padding-bottom: 20px; 
+}
+
+.contact-category:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.contact-category h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.contact-category h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.detail-name, .detail-phone {
+    font-size: 1em;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+.detail-email {
+    display: block;
+    font-size: 1em;
+    color: #ff6f00; 
+    font-weight: 500;
+    margin-top: 5px;
+    transition: color 0.2s;
+}
+
+.detail-email:hover {
+    color: #e65100;
+    text-decoration: underline;
+}
+
+.social-media-links {
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.social-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+.social-icon.facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+.social-icon.twitter:hover {
+    background-color: #1da1f2;
+    color: white;
+}
+.social-icon.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+.social-icon.linkedin:hover {
+    background-color: #0077b5;
+    color: white;
+}
+.social-icon.youtube:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+.helpdesk-form-container {
+    flex: 1;
+    padding: 60px;
+    background-color: #ffffff; 
+}
+
+.helpdesk-form-container .section-title {
+    font-size: 2em;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.form-description {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.helpdesk-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group-inline {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.phone-group, .email-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #004d40;
+    box-shadow: 0 0 0 3px rgba(0, 77, 64, 0.1);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #000000;
+    transform: translateY(-1px);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column; 
+        box-shadow: none; 
+    }
+
+    .contact-info,
+    .helpdesk-form-container {
+        padding: 40px 20px;
+        border-right: none;
+    }
+
+    .contact-info {
+        border-bottom: 1px solid #eee; /* Separator line between sections */
+    }
+
+    .form-group-inline {
+        flex-direction: column; /* Stack phone and email fields */
+        gap: 0;
+    }
+
+    .phone-group {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info .section-title,
+    .helpdesk-form-container .section-title {
+        font-size: 1.8em;
+    }
+    .contact-info,
+    .helpdesk-form-container {
+        padding: 30px 15px;
+    }
+}

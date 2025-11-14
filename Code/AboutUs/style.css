@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #65d4b194; 
+    color: #004d40; 
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.ngo-logo {
+    height: 70px; 
+    width: auto;
+    margin: 5px 0; 
+}
+
+.ngo-name {
+    font-size: 1.6em; 
+    font-weight: 700;
+    margin: 0;
+    color: #004d40;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #100a0a; 
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: #ff6f00; 
+}
+
+.donate-button, .join-button {
+    background-color: #ff6f00;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 15px; 
+    font-weight: 700;
+    border: 2px solid #ff6f00;
+    transition: all 0.3s ease;
+    white-space: nowrap; 
+}
+
+.donate-button:hover, .join-button:hover {
+    background-color: #e65100; 
+    border-color: #e65100;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#language-select {
+    padding: 8px 10px;
+    font-size: 1em;
+    font-family: inherit; 
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.about-us-section {
+    padding: 50px 20px 100px 20px; 
+    background-color: #f4f6f9; 
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 60px; 
+}
+
+.section-title h2 {
+    font-size: 3em;
+    color: #1a1a1a;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px; 
+    letter-spacing: 1px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 4px;
+    background-color: #ff6f00; /* Orange highlight */
+    border-radius: 2px;
+}
+
+.about-us-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1700px; /* Wide container */
+    margin: 0 auto; 
+    gap: 60px; 
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px; 
+    max-width: 600px; 
+    text-align: justify;
+    background-color: #dcd7d7; 
+    padding: 45px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-text h4 {
+    text-align: left;
+}
+
+.about-text:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h4 {
+    font-size: 2em;
+    color: #004d40; /* NGO Primary Color */
+    margin-bottom: 25px; 
+    font-weight: 700;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.1em; 
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #e11f1fe3;
+}
+
+.about-images {
+    flex: 1;
+    min-width: 300px; 
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+.about-images .main-img {
+    height: 350px; 
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-grid .about-img {
+    height: 180px; 
+}

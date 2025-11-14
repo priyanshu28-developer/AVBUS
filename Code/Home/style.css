@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif; /* Added a default font family */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Header & Logo Styling --- */
+
+.main-header {
+    width: 100%;
+    /* Removed fixed height: 17%; - Let content define height */
+    background-color: #65d4b194; 
+    color: #004d40; 
+    padding: 10px 5%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Increased gap slightly */
+}
+
+.ngo-logo {
+    height: 90px; /* Reduced height for better fit */
+    width: auto;
+    /* margin: 5px; - Removed margin here, controlled by container padding */
+}
+
+.ngo-name {
+    font-size: 1.5em; 
+    font-weight: 700;
+    margin: 0;
+    color: #004d40;
+}
+
+/* --- Navigation Styling --- */
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Increased gap for desktop readability */
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 8px 12px; /* Adjusted padding */
+    font-size: 1em;
+    font-weight: 500;
+    color: #100a0a; 
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: #ff6f00; 
+}
+
+/* --- Button Styling --- */
+
+.donate-button, .join-button {
+    background-color: #ff6f00;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 15px; /* Unified padding */
+    font-weight: 700;
+    border: 2px solid #ff6f00;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Prevents button text from wrapping */
+}
+
+.donate-button:hover, .join-button:hover {
+    background-color: #e65100; 
+    border-color: #e65100;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Language Switcher Styling --- */
+
+#language-select {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    font-family: inherit; 
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#language-select:hover,
+#language-select:focus {
+    background-color: #fff;
+    border-color: #3cc6af; 
+    outline: none; 
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablet and smaller screens (Max-width: 992px) */
+@media (max-width: 992px) {
+    .main-header {
+        padding: 10px 3%;
+    }
+    
+    .ngo-name {
+        font-size: 1.3em; 
+    }
+
+    .nav-list {
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 0.95em;
+    }
+}
+
+/* Mobile screens (Max-width: 768px) */
+@media (max-width: 768px) {
+    .main-header {
+        /* Stack the logo container and navigation for mobile */
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .logo-container {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .ngo-logo {
+        height: 70px; /* Smaller logo for mobile */
+    }
+
+    .ngo-name {
+        font-size: 1.2em;
+        text-align: right;
+        flex-grow: 1; /* Allows the name to take up space */
+    }
+
+    .main-nav {
+        width: 100%;
+        /* Hide navigation by default - typically done with a hamburger menu */
+        /* For simplicity here, we'll make it wrap and center */
+        margin-bottom: 10px;
+    }
+    
+    .nav-list {
+        flex-wrap: wrap; /* Allows items to wrap onto a new line */
+        justify-content: center; /* Center navigation items */
+        gap: 8px 10px; /* Smaller gap */
+    }
+
+    .nav-item {
+        flex-basis: auto; /* Allows items to take natural width */
+    }
+
+    .nav-link {
+        font-size: 0.9em;
+        padding: 6px 8px;
+    }
+
+    .donate-button, .join-button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    
+    .language-switcher {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    #language-select {
+        width: 50%; /* Make select box wider */
+        max-width: 150px;
+    }
+}
+
+
+.footer a:hover {
+    color: #ffd700 !important; 
+    transition: all 0.3s ease;
+}
+
+.footer .text-warning {
+    color: #ffc107 !important; 
+}
+
+.footer i {
+    margin-right: 8px; 
+}
